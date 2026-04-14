@@ -4,68 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pagina Personal</title>
-    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
 
-    <header>
+<body class="bg-white">
 
-        <h1>Magui Esther De La Rosa Jimenez</h1>
+    <!-- HEADER CON FOTO -->
+    <header class="container py-5 border-bottom">
+        <div class="row align-items-center justify-content-center text-center text-md-start">
 
-        <p><em>Tecnologo en Multimedia</em></p>
+            <!-- FOTO -->
+            <div class="col-12 col-md-3 mb-3 mb-md-0">
+                <img src="https://i.pinimg.com/736x/a9/21/7f/a9217f43edd88f18a5bdbc480aa4d8e4.jpg"
+                     width="120"
+                     height="120"
+                     class="rounded-circle object-fit-cover shadow-sm mb-3 mb-md-0"
+                     alt="Foto de perfil">
+            </div>
 
+            <!-- TEXTO -->
+            <div class="col-12 col-md-9">
+                <h1 class="fw-bold">Magui Esther De La Rosa Jimenez</h1>
+                <p class="text-muted mb-2"><em>Tecnologo en Multimedia</em></p>
+
+                <!-- EXTRA -->
+                <span class="badge bg-dark">Multimedia</span>
+            </div>
+
+        </div>
     </header>
 
-
-    <section id="sobremi">
-
-        <h2>Sobre mi</h2>
-
-        <p>Estudiante de Multimedia en el Instituto Tenologico de las Americas, y me encanta la edicion de video.</p>
-
+    <!-- SOBRE MI -->
+    <section class="container my-5 py-3">
+        <div class="card border-0 shadow-sm p-2">
+            <div class="card-body text-center px-4">
+                <h2>Sobre mí</h2>
+                <p>
+                    Estudiante de Multimedia en el Instituto Tecnológico de las Américas,
+                    y me encanta la edición de video.
+                </p>
+            </div>
+        </div>
     </section>
 
+    <!-- HABILIDADES Y HOBBIES -->
+    <main class="container my-5">
+        <div class="row g-4">
 
-    <main>
+            <!-- HABILIDADES -->
+            <div class="col-12 col-md-6">
+                <div class="card border-0 shadow-sm h-100 p-2">
+                    <div class="card-body">
+                        <h2>Habilidades</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Premiere</li>
+                            <li class="list-group-item">After Effects</li>
+                            <li class="list-group-item">Photoshop</li>
+                            <li class="list-group-item">Ableton</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-        <section id="habilidades">
+            <!-- HOBBIES -->
+            <div class="col-12 col-md-6">
+                <div class="card border-0 shadow-sm h-100 p-2">
+                    <div class="card-body">
+                        <h2>Hobbies</h2>
+                        <p>Amo ver series coreanas y chinas, mis favoritas son:</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Sabuezos</li>
+                            <li class="list-group-item">Little Princess</li>
+                            <li class="list-group-item">Hotel King</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-            <h2>Habilidades</h2>
-
-            <ul>
-                <li>Premiere</li>
-                <li>After Effects</li>
-                <li>Photoshop</li>
-                <li>Ableton</li>
-            </ul>
-
-        </section>
-
-        <section id="hobbies">
-
-            <h2>Hobbies</h2>
-            
-            <p>Amo ver series coreanas y chinas, mis favoritas son:</p>
-            
-            <ul>
-                <li>Sabuezos</li>
-                <li>Little Princess</li>
-                <li>Hotel King</li>
-            </ul>
-            
-        </section>
-
+        </div>
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+   <footer class="d-flex justify-content-center align-items-center py-4 border-top mt-5">
+    <a href="#" class="mx-2 text-decoration-none text-primary fw-semibold">Instagram</a>
+    <a href="#" class="mx-2 text-decoration-none text-primary fw-semibold">Facebook</a>
+    <a href="#" class="mx-2 text-decoration-none text-primary fw-semibold">Youtube</a>
+    <a href="#" class="mx-2 text-decoration-none text-primary fw-semibold">Behance</a>
+</footer>
 
-        <a href="">Instagram</a>
-        <a href="">Facebook</a>
-        <a href="">Youtube</a>
-        <a href="">Behance</a>
-
-    </footer>
-
-    
 </body>
 </html>
